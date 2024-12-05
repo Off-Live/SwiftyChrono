@@ -9,7 +9,7 @@
 import Foundation
 
 private let PATTERN = "(\\W|^)((at)?\\s*(this|late)?\\s*(morning|afternoon|lunch|evening|dinner|noon))"
-private let timeMatch = 4
+private let timeMatch = 5
 
 public class ENCasualTimeParser: Parser {
     override var pattern: String { return PATTERN }
