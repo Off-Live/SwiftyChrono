@@ -12,7 +12,7 @@ public struct ModeOptio {
     var parsers: [Parser]
     var refiners: [Refiner]
     
-    init(parsers: [Parser], refiners: [Refiner]) {
+    public init(parsers: [Parser], refiners: [Refiner]) {
         self.parsers = parsers
         self.refiners = refiners
     }
