@@ -32,36 +32,36 @@ private func baseOption(strictMode: Bool) -> ModeOptio {
         ENTimeAgoFormatParser(strictMode: strictMode),
         ENTimeExpressionParser(strictMode: strictMode),
         
-        // JP
-        JPStandardParser(strictMode: strictMode),
-        
-        // ES
-        ESTimeAgoFormatParser(strictMode: strictMode),
-        ESDeadlineFormatParser(strictMode: strictMode),
-        ESTimeExpressionParser(strictMode: strictMode),
-        ESMonthNameLittleEndianParser(strictMode: strictMode),
-        ESSlashDateFormatParser(strictMode: strictMode),
-        
-        // FR
-        FRDeadlineFormatParser(strictMode: strictMode),
-        FRMonthNameLittleEndianParser(strictMode: strictMode),
-        FRSlashDateFormatParser(strictMode: strictMode),
-        FRTimeAgoFormatParser(strictMode: strictMode),
-        FRTimeExpressionParser(strictMode: strictMode),
-        
-        // DE
-        DEDeadlineFormatParser(strictMode: strictMode),
-        DEMonthNameLittleEndianParser(strictMode: strictMode),
-        DESlashDateFormatParser(strictMode: strictMode),
-        DETimeAgoFormatParser(strictMode: strictMode),
-        DETimeExpressionParser(strictMode: strictMode),
-        
-        // ZH-Hant
-        ZHCasualDateParser(strictMode: strictMode),
-        ZHDateParser(strictMode: strictMode),
-        ZHDeadlineFormatParser(strictMode: strictMode),
-        ZHTimeExpressionParser(strictMode: strictMode),
-        ZHWeekdayParser(strictMode: strictMode),
+//        // JP
+//        JPStandardParser(strictMode: strictMode),
+//        
+//        // ES
+//        ESTimeAgoFormatParser(strictMode: strictMode),
+//        ESDeadlineFormatParser(strictMode: strictMode),
+//        ESTimeExpressionParser(strictMode: strictMode),
+//        ESMonthNameLittleEndianParser(strictMode: strictMode),
+//        ESSlashDateFormatParser(strictMode: strictMode),
+//        
+//        // FR
+//        FRDeadlineFormatParser(strictMode: strictMode),
+//        FRMonthNameLittleEndianParser(strictMode: strictMode),
+//        FRSlashDateFormatParser(strictMode: strictMode),
+//        FRTimeAgoFormatParser(strictMode: strictMode),
+//        FRTimeExpressionParser(strictMode: strictMode),
+//        
+//        // DE
+//        DEDeadlineFormatParser(strictMode: strictMode),
+//        DEMonthNameLittleEndianParser(strictMode: strictMode),
+//        DESlashDateFormatParser(strictMode: strictMode),
+//        DETimeAgoFormatParser(strictMode: strictMode),
+//        DETimeExpressionParser(strictMode: strictMode),
+//        
+//        // ZH-Hant
+//        ZHCasualDateParser(strictMode: strictMode),
+//        ZHDateParser(strictMode: strictMode),
+//        ZHDeadlineFormatParser(strictMode: strictMode),
+//        ZHTimeExpressionParser(strictMode: strictMode),
+//        ZHWeekdayParser(strictMode: strictMode),
         
     ], refiners: [
         // Removing overlaping first
@@ -72,11 +72,11 @@ private func baseOption(strictMode: Bool) -> ModeOptio {
         ENMergeDateTimeRefiner(),
         ENMergeDateRangeRefiner(),
         ENPrioritizeSpecificDateRefiner(),
-        FRMergeDateRangeRefiner(),
-        FRMergeDateTimeRefiner(),
-        JPMergeDateRangeRefiner(),
-        DEMergeDateTimeRefiner(),
-        DEMergeDateRangeRefiner(),
+//        FRMergeDateRangeRefiner(),
+//        FRMergeDateTimeRefiner(),
+//        JPMergeDateRangeRefiner(),
+//        DEMergeDateTimeRefiner(),
+//        DEMergeDateRangeRefiner(),
         
         // Extract additional info later
         ExtractTimezoneOffsetRefiner(),
@@ -101,21 +101,21 @@ public func casualModeOption() -> ModeOptio {
         ENRelativeDateFormatParser(strictMode: false),
         
         // JP
-        JPCasualDateParser(strictMode: false),
-        
-        // ES
-        ESCasualDateParser(strictMode: false),
-        ESWeekdayParser(strictMode: false),
-        
-        // FR
-        FRCasualDateParser(strictMode: false),
-        FRWeekdayParser(strictMode: false),
-        
-        // DE
-        DECasualTimeParser(strictMode: false),
-        DECasualDateParser(strictMode: false),
-        DEWeekdayParser(strictMode: false),
-        DEMorgenTimeParser(strictMode: false),
+//        JPCasualDateParser(strictMode: false),
+//        
+//        // ES
+//        ESCasualDateParser(strictMode: false),
+//        ESWeekdayParser(strictMode: false),
+//        
+//        // FR
+//        FRCasualDateParser(strictMode: false),
+//        FRWeekdayParser(strictMode: false),
+//        
+//        // DE
+//        DECasualTimeParser(strictMode: false),
+//        DECasualDateParser(strictMode: false),
+//        DEWeekdayParser(strictMode: false),
+//        DEMorgenTimeParser(strictMode: false),
         
     ], at: 0)
     
